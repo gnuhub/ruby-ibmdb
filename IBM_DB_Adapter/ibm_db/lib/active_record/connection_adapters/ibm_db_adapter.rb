@@ -2972,7 +2972,7 @@ module Arel
     class Visitor #opening and closing the class to ensure backward compatibility
     end
 
-    class ToSql < Arel::Visitors::Visitor #opening and closing the class to ensure backward compatibility
+    class ToSql < Arel::Visitors::Reduce #opening and closing the class to ensure backward compatibility
       # In case when using Rails-2.3.x there is no arel used due to which the constructor has to be defined explicitly
       # to ensure the same code works on any version of Rails
       

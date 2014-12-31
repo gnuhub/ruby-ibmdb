@@ -238,7 +238,8 @@ def libpathflag(libpath)
       ""
   end
   #libpathflag0 + " '-Wl,-R$$ORIGIN/clidriver/lib #{ldflags}' "
-  libpathflag0 + " '-Wl,-R$$ORIGIN/clidriver/lib' "
+  #libpathflag0 + " '-Wl,-R$$ORIGIN/clidriver/lib' "
+  libpathflag0
 end
 
 have_header('gil_release_version')
